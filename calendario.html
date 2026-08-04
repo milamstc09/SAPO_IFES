@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendário</title>
+        <link rel="stylesheet" href="css/calendario.css">
+        <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <span>SAPO IFES</span>
+            </div>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Fale Conosco</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="card">
+                <h2>Horários disponíveis</h2>
+                <p class="orientacao">
+                    Selecione um dia no calendário para visualizar os horários disponíveis.
+                </p>
+
+                <section id="calendario">
+                    <h1>Calendário</h1>
+                        <div class="calendario-box">
+                            <div id="calendar"></div>
+                        </div>
+                        <div class="horarios">
+                            <h2>Horários disponíveis</h2>
+                            <p class="data-selecionada">
+                                📅 28/07/2026
+                            </p>
+
+                            <ul>
+                                <li>08:00</li>
+                                <li>09:00</li>
+                                <li>10:00</li>
+                                <li>15:00</li>
+                                <li>16:00</li>
+                            </ul>
+                        </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="logo">
+                <img src="img/logoFooter.png" alt="Logo SAPO IFES" class="footer-logo">
+            </div>
+
+            <div>
+                <h4>Navegar pelo site:</h4>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#como-surgiu">Como Surgiu</a>
+                <a href="#contato">Fale Conosco</a>
+            </div>
+
+            <div>
+                <p class="copyright">© 2026 Company, SAPO</p>
+            </div>
+        </footer>        
+
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.js"></script>
+        <script src="Js/calendario.js"></script>
+    </body>
+</html>

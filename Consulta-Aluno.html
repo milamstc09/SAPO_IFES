@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendar Consulta</title>
+        <link rel="stylesheet" href="css/consulta-Aluno.css">
+    </head>
+
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <span>SAPO IFES</span>
+            </div>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Fale Conosco</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="card">
+                <h2>Agendar Consulta</h2>
+                <p class="descricao">
+                    Seja bem-vindo(a) ao SAPO IFES!
+                    Estamos prontos para atender você da melhor forma. Escolha a data e o horário mais 
+                    convenientes no formulário abaixo e aguarde a confirmação.
+                </p>
+
+                <form action="AgendarServlet" method="post">
+                    <div class="input-group">
+                        <label>Nome</label>
+                        <input type="text" name="nome" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Turma</label>
+                        <input type="text" name="turma" placeholder="Digite sua turma">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Digite seu email">
+                    </div>
+
+                    <div class="linha">
+                        <div class="input-group">
+                            <label>Data</label>
+                            <input type="date" name="data">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Horário</label>
+                            <input type="time" name="horario">
+                        </div>
+                    </div>
+
+                    <button type="submit">Enviar solicitação</button>
+
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="logo">
+                <img src="img/logoFooter.png" alt="Logo SAPO IFES" class="footer-logo">
+            </div>
+
+            <div>
+                <h4>Navegar pelo site:</h4>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#como-surgiu">Como Surgiu</a>
+                <a href="#contato">Fale Conosco</a>
+            </div>
+
+            <div>
+                <p class="copyright">© 2026 Company, SAPO</p>
+            </div>
+        </footer>        
+    </body>
+</html>

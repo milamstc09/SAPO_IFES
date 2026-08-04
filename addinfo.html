@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adicionar informações</title>
+        <link rel="stylesheet" href="css/addinfo.css">
+        <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+    </head>
+
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <span>SAPO IFES</span>
+            </div>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Fale Conosco</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="card">
+                <h2>Adicionar informações</h2>
+                <div class="editor">
+                    <div class="input-group">
+                        <label>Título da publicação</label>
+                        <input type="text" name="titulo" placeholder="Digite o título da publicação">
+                    </div>
+
+                    <textarea id="conteudo"></textarea>
+
+                    <div class="button-group">
+                        <button type="button" class="btn-cancelar">Cancelar</button>
+                        <button type="submit" class="btn-publicar">Publicar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="logo">
+                <img src="img/logoFooter.png" alt="Logo SAPO IFES" class="footer-logo">
+            </div>
+
+            <div>
+                <h4>Navegar pelo site:</h4>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#como-surgiu">Como Surgiu</a>
+                <a href="#contato">Fale Conosco</a>
+            </div>
+
+            <div>
+                <p class="copyright">© 2026 Company, SAPO</p>
+            </div>
+        </footer>        
+        <script src="Js/editor.js"></script>
+    </body>
+</html>
