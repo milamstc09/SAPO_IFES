@@ -1,0 +1,452 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@media (max-width: 768px){
+    nav{
+        flex-direction:column;
+        gap:1.5rem;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        gap:1rem;
+    }
+
+    #sobre{
+        flex-direction:column;
+        text-align:center;
+        gap:3rem;
+    }
+
+    .texto{
+        max-width:100%;
+    }
+
+    .texto p{
+        text-align:left;
+    }
+
+    .imagem img{
+        max-width:18rem;
+    }
+
+    .caixas{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:2rem;
+        text-align:center;
+    }
+
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:linear-gradient(
+        135deg,
+        #d5f0d6,
+        #cce5ff
+    );
+    z-index:1000;
+    box-shadow:0 .3rem 1rem rgba(0,0,0,.15);
+}
+
+nav{
+    height:4.3rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 3rem;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+}
+
+    .logo img{
+        width:5rem;
+        height:auto;
+    }
+
+    .logo h2{
+        font-size:1.8rem;
+        color:#241D41;
+    }
+
+nav ul{
+    display:flex;
+    gap:3rem;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    font-weight:700;
+    color:#241D41;
+    font-size:.95rem;
+    letter-spacing:.03rem;
+}
+
+
+#inicio{
+    min-height:100vh;
+    padding-top:7rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #d5f0d6,
+        #cce5ff
+    );
+}
+
+.conteudo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:2.5rem;
+}
+
+.pesquisa{
+    width:min(88%, 52rem);
+    max-width:52rem;
+    height:2.7rem;
+    margin:auto;
+    margin-bottom:4rem;
+    display:flex;
+    align-items:center;
+    border:.10rem solid #666;
+}
+    .pesquisa img{
+        width:1.5rem;
+        margin:.5rem;
+    }
+
+    .pesquisa input{
+        flex:1;
+        border:none;
+        outline:none;
+        font-size:1rem;
+        padding:.45rem 0;
+        background:transparent;
+    }
+
+.titulo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+
+    .titulo img{
+        width:3.2rem;
+    }
+
+    .titulo h1{
+        font-size:2.7rem;
+        color:#241D41;
+    }
+
+.linha{
+    width:14rem;
+    height:.15rem;
+    background:white;
+    margin:1rem auto 3rem;
+}
+
+.caixas{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:8rem;
+    margin-top: 1.5rem;
+}
+
+.card{
+    width:14rem;
+    height:14rem;
+    background:white;
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 .3rem .9rem rgba(0,0,0,.15);
+    /*Para a navegação entre páginas*/
+    transition:.3s;
+    cursor:pointer;
+}
+    .card:nth-child(1){
+        margin-top:1rem;
+    }
+    .card:nth-child(2){
+        margin-top:5rem;
+    }
+    .card:nth-child(3){
+        margin-top:1rem;
+    }
+
+    .card img{
+        width:4.8rem;
+        margin-bottom:1rem;
+    }
+
+    .card p{
+        margin-top:.8rem;
+        font-size:1.5rem;
+        font-weight:600;
+        color:#241D41;
+    }
+
+    .card:hover{
+        transform:translateY(-0.4rem);
+        box-shadow:0 .7rem 1.4rem rgba(0,0,0,.2);
+    }
+
+    .link-card{
+        width:100%;
+        height:100%;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-decoration:none;
+        color:inherit;
+    }
+
+#sobre{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    padding: 6rem 12%;
+    background-color: #fffbf5;
+}
+
+    .titulo-Sobre{
+        display:inline-block;
+        position:relative;
+        padding:0.6rem 1.3rem;
+        margin-bottom:2rem;
+        font-size:3rem;
+        font-weight:700;
+        color:#2F2F2F;
+        background:white;
+        border:0.2rem solid #D7E9D8;
+        border-radius:1rem;
+    }
+
+    .texto{
+        flex: 1;
+        max-width:35rem;
+    }
+        .texto p{
+            font-size:1.25rem;
+            line-height:1.55;
+            text-align:justify;
+            color:#29253F;
+        }
+
+    .imagem{
+         flex:1;
+         display:flex;
+         justify-content:center;
+    }
+
+    .imagem img{
+        width:100%;
+        max-width:27rem;
+        aspect-ratio:1;
+        object-fit:cover;
+        margin-top: 5rem;
+        /*border-radius:50%;
+        border:.15rem solid #000;
+        usar o border-radius e o border se for mudar a imagem. Como eu coloquei a foto da foto (com a berada branca) não precisei 
+        fazer o contorno preto em volta*/
+    }
+
+
+#como-surgiu{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 6rem 8%;
+    background-color: #fffbf5;
+}
+    .titulo-ComoSurgiu{
+        display:inline-block;
+        position:relative;
+        padding:0.6rem 1.3rem;
+        margin-bottom:2rem;
+        font-size:3rem;
+        font-weight:700;
+        color:#2F2F2F;
+        background:linear-gradient(135deg, #d5f0d6, #cce5ff);
+        border-radius:1rem;
+    }
+
+    .titulo-ComoSurgiu::after{
+        content:"";
+        position:absolute;
+        width:1rem;
+        height:1rem;
+        left:1rem;
+        bottom:-.45rem;
+        background:linear-gradient(135deg,#d5f0d6,#cce5ff);
+        transform:rotate(45deg);
+    }
+
+    .conteudo{
+        width: 100%;
+        max-width: 56rem;
+    }
+
+    #como-surgiu p{
+        font-size:1.2rem;
+        line-height:1.7;
+        text-align:justify;
+        color:#29253F;
+        margin-bottom:2rem;
+    }
+
+
+#contato{
+    min-height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:5rem 8%;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(213,240,214,.55) 0%,
+        #fffbf5 18%,
+        #fffbf5 82%,
+        rgba(213,240,214,.55) 100%
+    );
+}
+
+    #contato h2{
+        font-size:clamp(2.5rem,5vw,3.5rem);
+        font-weight:700;
+        color:#2F2F2F;
+        margin-bottom:3rem;
+    }
+
+   .contatos{
+        width:100%;
+        max-width:34rem;
+    }
+
+    .setor{
+        margin-bottom:2rem;
+    }
+
+    .setor h3{
+        font-size:1.3rem;
+        font-weight:700;
+        color:#1B1B3A;
+    }
+
+footer{
+    background:#191F2C;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem 5%;
+    min-height:15rem;
+}
+
+.footer-logo{
+    flex:1;
+    padding-right:3rem;
+    border-right:0.08rem solid rgba(0,0,0,.35);
+}
+
+.footer-logo img{
+    width:100%;
+    max-width:33rem;
+    display:block;
+}
+
+.footer-links{
+    flex:0.8;
+    display:flex;
+    flex-direction:column;
+    margin-left:10rem;
+}
+
+.footer-links h3{
+    color:#649802;
+    font-size:1.5rem;
+    margin-bottom:1rem;
+}
+
+.footer-links a{
+    color:#649802;
+    text-decoration:underline;
+    font-size:1.2rem;
+    width:fit-content;
+    margin-bottom:.5rem;
+}
+
+.footer-links a:hover{
+    color:#84c900;
+}
+
+.footer-copy{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+    align-self:flex-end;
+    padding-bottom:.4rem;
+}
+
+.footer-copy p{
+    color:#649802;
+    font-size:1.5rem;
+}
+
+@media (max-width:768px){
+    footer{
+        flex-direction:column;
+        text-align:center;
+        gap:3rem;
+    }
+    .footer-logo{
+        border-right:none;
+        border-bottom:.08rem solid rgba(255,255,255,.15);
+        padding-right:0;
+        padding-bottom:2rem;
+    }
+    .footer-links{
+        align-items:center;
+        padding-left:0;
+    }
+    .footer-copy{
+        justify-content:center;
+    }
+}

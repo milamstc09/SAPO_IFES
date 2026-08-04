@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #b8efba, #a4c6ee);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+      /*CABEÇALHO*/
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end; /* Alinha o texto pela base da imagem */
+    gap: 12px;             /* Espaço entre a imagem e o texto */
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+.navbar a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.833);
+    font-weight: 600;
+    transition: 0.3s;
+}
+ 
+.navbar a:hover{
+  color: #2ecc71;
+}
+
+/* CORPO*/
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* CARD */
+.card {
+    width: 100%;
+    max-width: 900px;
+    padding: 60px;
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.orientacao {
+    text-align: center;
+    margin-bottom: 45px;
+    color: #171717;
+}
+
+/* TEXTO */
+.linha {
+    display: flex;
+    gap: 15px;
+}
+
+#calendario h1{
+    text-align:center;
+    font-size:2rem;
+    color:#241D41;
+    margin-bottom:1rem;
+}
+
+.calendario-box{
+    width:100%;
+    max-width:760px;
+    margin:0 auto;
+    background:white;
+    border-radius:1rem;
+    padding:2rem;
+    box-shadow:0 .4rem 1rem rgba(0,0,0,.15);
+}
+
+.horarios{
+    width:100%;
+    max-width:900px;
+    margin:30px auto 0;
+    background:linear-gradient(135deg, #d5f0e9, #cce5ff);
+    border-radius:1rem;
+    padding:2rem;
+    box-shadow:0 .4rem 1rem rgba(0,0,0,.15);
+}
+
+.horarios h2{
+    color:#241D41;
+    margin-bottom:1rem;
+    font-size:1.5rem;
+}
+
+.data-selecionada{
+    color:#777;
+    margin-bottom:1.5rem;
+    font-weight:600;
+}
+
+.horarios ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    list-style:none;
+}
+
+.horarios li{
+    padding:1rem;
+    margin-bottom:.8rem;
+    border-radius:.7rem;
+    background:#EDF4F9;
+    font-size:1.1rem;
+    transition:.3s;
+    font-weight:600;
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: #1a1d2c;
+    color: white;
+}
+
+/* links */
+.footer a{
+    display: block;
+    color: #7fff00;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* copyright embaixo */
+.copyright{
+    text-align: center;
+    margin-top: 95px;
+    color: #7fff00;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .linha {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
